@@ -1,0 +1,241 @@
+/* ------------------------------------- */
+/* BASIC SETUP */
+/* ---------------------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    color: #555;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+/* ------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ---------------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* ------------------------------------- */
+/* HEADER*/
+/* ---------------------------------------- */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+h1 {
+    margin-top: 0;
+    color: aliceblue;
+    margin-bottom: 20px;
+    font-size: 240%;
+    word-spacing: 4px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+.box {
+    padding: 1%;
+}
+
+.box p {
+    line-height: 145%;
+    font-size: 90%;
+}
+
+/* ----------------------Paragraphs---------------- */
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+/* -----ICONS----- */
+.icon-big {
+    font-size: 400%;
+    display: block;
+    color: rgba(230, 126, 34, 1);
+    margin-bottom: 30px;
+
+}
+
+
+/* ------------------------------------- */
+/* BUTTONS */
+/* ---------------------------------------- */
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: rgb(211, 211, 211);
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full {
+    background-color: rgba(230, 126, 34, 0.8);
+    border: 1px solid rgba(230, 126, 34, 1);
+}
+
+.btn-ghost {
+    border: 1px solid #e67e22;
+    color: rgba(230, 126, 34, 1);
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: rgb(180, 84, 0);
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    background-color: rgba(230, 126, 34, 0.8);
+    color: rgb(255, 235, 217);
+}
+
+/* ------------------------------------------ */
+/* NAVBAR */
+/* -------------------------------------- */
+.logo {
+    float: left;
+    width: auto;
+    height: 100px;
+    margin-top: 15px;
+
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 45px;
+
+
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: rgb(255, 242, 218);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    padding-bottom: 10px;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid rgba(230, 126, 34, 1);
+}
+
+/* ------------------------------------------ */
+/* -----FEATURES-------- */
+/* -------------------------------------- */
+.section-features .long-copy {
+    margin-bottom: 50px;
+}
+
+
+
+/* ------------------------------------------ */
+/* -----MEALS-------- */
+/* -------------------------------------- */
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+    margin: 0;
+
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
