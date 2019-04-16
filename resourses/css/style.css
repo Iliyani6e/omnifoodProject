@@ -507,3 +507,88 @@ input[type=checkbox] {
 *:focus {
     outline: none;
 }
+
+/* ------------------------------------------ */
+/* FOOOTER*/
+/* -------------------------------------- */
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    float: left;
+    list-style: none;
+}
+
+.social-icons {
+    list-style: none;
+    float: right;
+
+}
+
+.social-icons a {
+    margin-right: 20px;
+    font-size: 200%;
+}
+
+.footer-nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a,
+.social-links li a {
+    text-decoration: none;
+    border: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-icons li a:link,
+.social-icons li a:visited {
+    text-decoration: none;
+    border-bottom: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    text-decoration: none;
+    border-bottom: 0;
+    color: #ddd;
+}
+
+.social-links li a {
+    color: rgb(150, 150, 150);
+    font-size: 180%;
+}
+
+.github,
+.linkedin {
+    transition: color 0.2s;
+}
+
+.github:hover {
+    color: rgb(45, 186, 78);
+}
+
+.linkedin:hover {
+    color: rgb(0, 119, 181);
+}
+
+
+footer p {
+    color: #888;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 20px;
+}
