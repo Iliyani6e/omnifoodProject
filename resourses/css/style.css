@@ -223,10 +223,18 @@ input[type=submit]:active {
 .logo {
     float: left;
     width: auto;
-    height: 50px;
+    height: 100px;
     margin-top: 10px;
     margin-bottom: 10px;
 
+}
+
+.logo-black {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
 }
 
 .main-nav {
@@ -288,6 +296,7 @@ input[type=submit]:active {
     left: 0;
     width: 100%;
     background: rgba(255, 255, 255, 0.95);
+    -webkit-box-shadow: 0 2px 2px #efefef;
     box-shadow: 0 2px 2px #efefef;
     z-index: 9999;
 }
@@ -648,4 +657,26 @@ footer p {
     text-align: center;
     font-size: 90%;
     margin-top: 20px;
+}
+
+/* ------------------------------------------ */
+/* -----ANIMATIONS-------- */
+/* -------------------------------------- */
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
 }
