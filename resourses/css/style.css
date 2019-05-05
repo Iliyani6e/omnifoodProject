@@ -403,6 +403,7 @@ input[type=submit]:active {
 
 .app-screen {
     width: 40%;
+    border-radius: 35px;
 }
 
 .works-step {
