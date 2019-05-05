@@ -139,6 +139,7 @@ h3 {
     color: #e67e22;
     font-size: 120%;
     margin-right: 10px;
+    margin-bottom: 5px;
 
     /* icon align tricks */
 
@@ -146,6 +147,7 @@ h3 {
     line-height: 120%;
     margin-top: -5px;
 }
+
 
 
 /* ------------------------------------- */
@@ -300,6 +302,30 @@ input[type=submit]:active {
     box-shadow: 0 2px 2px #efefef;
     z-index: 9999;
 }
+
+/* MOBILE NAV */
+.mobile-nav-icon {
+    float: right;
+    margin-right: 20px;
+    margin-top: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
 
 /* ------------------------------------------ */
 /* -----FEATURES-------- */
