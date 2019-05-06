@@ -136,4 +136,19 @@ $(document).ready(function() {
       icon.removeClass("fa-times");
     }
   });
+  var map = new GMaps({
+    div: ".map",
+    lat: 42.4193132,
+    lng: 25.78,
+    zoom: 11.75
+  });
+  map.addMarker({
+    lat: 42.445211,
+    lng: 25.634919,
+    title: "Езерото",
+    infoWindow: {
+      content: "<p>Езерото</p>"
+    }
+  });
 });
+// 42.445211, 25.634919
